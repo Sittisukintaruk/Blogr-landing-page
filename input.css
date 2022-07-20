@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./input.css -o ./style.css --watch */
+/* <!-- <script type="module" src="/main.js"></script> --> */
+
+.container-layout {
+  @apply w-[calc(100%-2.5rem)] mx-auto lg:max-w-[1112px];
+}
+
+.outline-highlight {
+  outline: 1px solid red;
+}
+
+.bg-gradient-red {
+  background: linear-gradient(158.84deg, #ff8f70 0.69%, #ff3d54 99.4%);
+}
+.bg-gradient-darkblue {
+  background: linear-gradient(162.15deg, #2c2d3f 1.95%, #3f4164 97.81%);
+  border-radius: 0px 88px;
+}
+
+.hero-pattern {
+  transform: translate(-40%, -20%);
+}
+
+.hero-pateern-desktop {
+  transform: translate(6%, 35%);
+}
+
+.desktop-right {
+  transform: translate(-40px, -220px);
+}
+
+
+
+.phone-upper {
+  transform: translate(-50%, -355px);
+}
+
+.circles {
+  @apply -translate-x-[260px]  -translate-y-[158px] lg:-translate-x-[200px] lg:-translate-y-[391px];
+}
+.labtop-desktop {
+  @apply lg:-translate-x-[45%] lg:-translate-y-[-8px];
+}
+
+.footer-border {
+  border-radius: 0px 87px 0px 0px;
+}

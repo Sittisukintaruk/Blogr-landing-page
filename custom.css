@@ -1,0 +1,73 @@
+.bg-circles {
+  background: url("./images/bg-pattern-circles.svg"),
+    linear-gradient(162.15deg, #2c2d3f 1.95%, #3f4164 97.81%);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bg-circles-positon {
+  background-position: center top -50%;
+}
+
+.bg-round {
+  border-radius: 0px 0px;
+}
+
+.phone-left-upper {
+  transform: translate(-50%, -165px);
+}
+
+.arrow--rotate {
+  transition: transform 100ms ease-in;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.dropdow {
+  position: absolute;
+  top: 24px;
+  background-color: #ffffff;
+}
+
+[data-toggle].active + .menus {
+  display: block;
+}
+
+[data-toggle].active > .arrow--rotate {
+  transform: rotate(-180deg);
+}
+
+[data-menu-overlay].active {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .bg-circles {
+    background-size: auto;
+  }
+  .bg-circles-positon {
+    background-position: bottom 16% left -55%;
+  }
+
+  .phone-left-upper {
+    transform: translate(0px, 98px);
+  }
+
+  [data-menu-overlay].active {
+    display: none;
+  }
+
+  [data-close].show {
+    display: none;
+  }
+}
+
+/* div[data-toggle] {
+  background-color: red;
+} */

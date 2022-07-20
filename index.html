@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor - Blogr landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <section
+      class="w-full h-[524px] bg-gradient-red rounded-bl-[86px] overflow-hidden relative z-0"
+    >
+      <div class="absolute top-0 left-2/4 hero-pattern -z-[5] lg:hidden">
+        <svg
+          width="1324"
+          height="1323"
+          viewBox="0 0 1324 1323"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient x1=".695%" y1="0%" x2="99.305%" y2="100%" id="a">
+              <stop stop-color="#FF8F71" offset="0%" />
+              <stop stop-color="#FF3E55" offset="100%" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M821.895188,497.739327 L821.895188,825.739327 L493.895188,825.739327 L493.895188,597.739327 C493.895188,542.510852 538.666713,497.739327 593.895188,497.739327 L821.895188,497.739327 Z M276.655938,496.460979 C367.230637,496.460979 440.655938,569.88628 440.655938,660.460979 C440.655938,751.035678 367.230637,824.460979 276.655938,824.460979 C186.081239,824.460979 112.655938,751.035678 112.655938,660.460979 C112.655938,569.88628 186.081239,496.460979 276.655938,496.460979 Z M822.227687,111.489551 L822.227687,439.489551 L594.227687,439.489551 C538.999212,439.489551 494.227687,394.718026 494.227687,339.489551 L494.227687,339.489551 L494.227687,111.489551 L822.227687,111.489551 Z M440.061253,110.58581 L440.061253,338.58581 C440.061253,393.814285 395.289728,438.58581 340.061253,438.58581 L112.061253,438.58581 L112.061253,110.58581 L440.061253,110.58581 Z"
+            transform="rotate(22 67.652 1066.199)"
+            fill="url(#a)"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <img
+        class="hidden select-none lg:block lg:max-w-[3175px] lg:absolute lg:-bottom-2/4 lg:-left-2/4 lg:-z-10 hero-pateern-desktop"
+        src="./images/bg-pattern-intro-desktop.svg"
+        alt="desktop"
+      />
+
+      <header>
+        <div
+          class="container-layout flex justify-between items-center mt-[49px] lg:justify-start"
+        >
+          <a href="">
+            <img
+              class="w-[71px] h-[28px] lg:w-auto lg:h-auto"
+              src="./images/logo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="hidden ml-[57px] lg:block">
+            <ul
+              class="flex flex-row gap-8 text-neutral-White font-sansubuntu font-medium"
+            >
+              <li class="relative">
+                <div
+                  data-toggle
+                  class="flex gap-[9px] text-base items-center cursor-pointer"
+                >
+                  Product
+                  <img
+                    class="arrow--rotate"
+                    src="./images/icon-arrow-light.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden menus dropdow shadow-lg rounded-lg">
+                  <ul
+                    role="list"
+                    class="flex flex-col justify-center items-start gap-4 font-sansoverpass font-semibold px-4 pt-4 pb-6"
+                  >
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Overview</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Pricing</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Markplace</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Features</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Integrations</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative">
+                <div
+                  data-toggle
+                  class="flex gap-[9px] text-base items-center cursor-pointer"
+                >
+                  Company
+                  <img
+                    class="arrow--rotate"
+                    src="./images/icon-arrow-light.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="hidden menus dropdow left-[15px] shadow-lg rounded-lg"
+                >
+                  <ul
+                    role="list"
+                    class="flex flex-col justify-center items-start gap-4 font-sansoverpass font-semibold px-4 pt-4 pb-6"
+                  >
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">About</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Team</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Blog</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Careers</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative">
+                <div
+                  data-toggle
+                  class="flex gap-[9px] text-base items-center cursor-pointer"
+                >
+                  Connect
+                  <img
+                    class="arrow--rotate"
+                    src="./images/icon-arrow-light.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="hidden menus dropdow shadow-lg rounded-lg">
+                  <ul
+                    role="list"
+                    class="flex flex-col justify-center items-start gap-4 font-sansoverpass font-semibold px-4 pt-4 pb-6"
+                  >
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Contact</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Newsletter</a>
+                    </li>
+                    <li
+                      class="text-base tracking-tight text-neutral-Verydarkgrayishblue hover:text-neutral-Verydarkblackblue"
+                    >
+                      <a href="">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="hidden lg:flex font-sansubuntu justify-center gap-4 ml-auto"
+          >
+            <a
+              class="text-base tracking-tight text-neutral-White bg-transparent p-3 lg:py-[14px] lg:px-[25px] lg:tracking-normal rounded-3xl font-medium"
+              href=""
+            >
+              Login
+            </a>
+            <a
+              class="text-base tracking-tight text-primary-Lightred bg-neutral-White hover:bg-primary-hoverred hover:text-neutral-White py-3 px-5 lg:px-[40px] lg:py-[14px] lg:tracking-normal rounded-3xl font-medium"
+              href=""
+            >
+              Sign Up
+            </a>
+          </div>
+          <img
+            data-open
+            class="block cursor-pointer lg:hidden"
+            src="./images/icon-hamburger.svg"
+            alt="hamburger"
+          />
+          <img
+            data-close
+            class="hidden cursor-pointer lg:hidden"
+            src="./images/icon-close.svg"
+            alt="close"
+          />
+        </div>
+      </header>
+      <div class="container-layout mt-24 lg:mt-32">
+        <div class="flex flex-col gap-8">
+          <div
+            class="text-center text-neutral-White flex flex-col gap-3 lg:gap-5"
+          >
+            <h1
+              class="font-sansoverpass text-3xl lg:text-5xl -tracking-tigh font-semibold mx-4"
+            >
+              A modern publishing platform
+            </h1>
+            <p class="font-sansoverpass text-base text-xl font-normal">
+              Grow your audience and build your online brand
+            </p>
+          </div>
+          <div class="font-sansubuntu flex justify-center gap-4">
+            <a
+              class="text-base tracking-tight text-primary-Lightred hover:bg-primary-hoverred hover:text-neutral-White bg-neutral-White p-3 lg:py-[14px] lg:pl-[16px] lg:pr-[19px] lg:tracking-normal rounded-3xl font-medium"
+              href=""
+            >
+              Start for Free
+            </a>
+            <a
+              class="text-base tracking-tight text-neutral-White bg-transparent hover:bg-neutral-White hover:text-primary-Lightred border-neutral-White border py-3 px-5 lg:tracking-normal rounded-3xl font-medium"
+              href=""
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        data-menu-overlay
+        class="hidden fixed overflow-y-auto bg-neutral-White rounded-md shadow-lg w-[calc(100%-2rem)] h-4/5 sm:max-w-2xl lg:hidden left-2/4 top-2/4 -translate-x-2/4 -translate-y-[45%] z-[999]"
+      >
+        <div class="h-full px-6 pt-7 pb-8 flex flex-col justify-between">
+          <ul
+            class="flex flex-col items-center justify-center gap-[29px] text-primary-Verydarkblue font-sansubuntu font-semibold"
+          >
+            <li class="w-full flex flex-col items-center">
+              <div
+                data-toggle
+                class="flex gap-[9px] text-lg items-center cursor-pointer"
+              >
+                Product
+                <img
+                  class="arrow--rotate"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="arrow"
+                />
+              </div>
+              <div
+                class="hidden menus w-full mt-5 py-6 rounded-md bg-neutral-Graymenu font-sansoverpass font-medium"
+              >
+                <ul
+                  role="list"
+                  class="flex flex-col justify-center items-center gap-5"
+                >
+                  <li class="text-base tracking-tight">
+                    <a href="">Overview</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Pricing</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Markplace</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Features</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Integrations</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="w-full flex flex-col items-center">
+              <div
+                data-toggle
+                class="flex gap-[9px] text-lg items-center cursor-pointer"
+              >
+                Company
+                <img
+                  class="arrow--rotate"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="arrow"
+                />
+              </div>
+              <div
+                class="hidden menus w-full mt-5 py-6 rounded-md bg-neutral-Graymenu font-sansoverpass font-medium"
+              >
+                <ul
+                  role="list"
+                  class="flex flex-col justify-center items-center gap-5"
+                >
+                  <li class="text-base tracking-tight">
+                    <a href="">About</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Team</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Blog</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="w-full flex flex-col items-center">
+              <div
+                data-toggle
+                class="flex gap-[9px] text-lg items-center cursor-pointer"
+              >
+                Connect
+                <img
+                  class="arrow--rotate"
+                  src="./images/icon-arrow-dark.svg"
+                  alt="arrow"
+                />
+              </div>
+              <div
+                class="hidden menus w-full mt-5 py-6 rounded-md bg-neutral-Graymenu font-sansoverpass font-medium"
+              >
+                <ul
+                  role="list"
+                  class="flex flex-col justify-center items-center gap-5"
+                >
+                  <li class="text-base tracking-tight">
+                    <a href="">Contact</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Newletter</a>
+                  </li>
+                  <li class="text-base tracking-tight">
+                    <a href="">Linkedln</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="flex flex-col gap-[15px] border-t-2 font-sansoverpass border-neutral-Grayishblue items-center pt-8 pb-4 mt-6"
+          >
+            <a
+              class="text-lg tracking-tight bg-transparent text-primary-Verydarkblue p-3 rounded-3xl font-semibold"
+              href=""
+            >
+              Login
+            </a>
+            <a
+              class="text-lg inline tracking-tight bg-gradient-red text-neutral-White hover:opacity-90 hover:text-neutral-White py-3 px-9 rounded-3xl font-semibold"
+              href=""
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-[467px] lg:h-auto">
+      <div
+        class="container-layout text-center flex flex-col items-center pt-[91px] lg:pt-[163px] gap-[39px]"
+      >
+        <h2
+          class="font-sansoverpass font-semibold text-2xl lg:text-4xl text-primary-Verydarkblue tracking-tight lg:tracking-wide"
+        >
+          Designed for the future
+        </h2>
+        <img
+          class="w-[355px] max-w-none lg:hidden"
+          src="./images/illustration-editor-mobile.svg"
+          alt="editor"
+        />
+      </div>
+    </section>
+    <section class="h-[651px] lg:h-[700px]">
+      <div
+        class="container-layout pt-7 lg:pt-[111px] lg:grid lg:grid-cols-12 lg:gap-[30px]"
+      >
+        <div class="flex flex-col gap-[27px] lg:gap-[89px] lg:col-span-6">
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3 lg:gap-[26px] px-1 lg:px-0"
+          >
+            <h2
+              class="font-sansoverpass font-semibold text-2xl lg:text-2xxl text-primary-Verydarkblue w-[193px] lg:tracking-tigh lg:w-auto"
+            >
+              Introducing an extensible editor
+            </h2>
+            <p
+              class="font-sansubuntu text-base font-light text-neutral-Verydarkgrayishblue tracking-tightest leading-6 lg:tracking-wide lg:leading-[28px]"
+            >
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3 lg:gap-[26px] px-1 lg:px-0"
+          >
+            <h2
+              class="font-sansoverpass font-semibold text-2xl lg:text-2xxl text-primary-Verydarkblue w-[193px] lg:tracking-tigh lg:w-auto"
+            >
+              Robust content management
+            </h2>
+            <p
+              class="font-sansubuntu text-base font-light text-neutral-Verydarkgrayishblue tracking-tightest leading-6 lg:tracking-wide lg:leading-[28px]"
+            >
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+        <div class="hidden lg:block col-start-8 desktop-right">
+          <img
+            class="max-w-none"
+            src="./images/illustration-editor-desktop.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="h-[724px] lg:h-auto">
+      <div class="h-full grid">
+        <div class="self-end">
+          <div
+            class="h-[547px] lg:h-[405px] bg-circles bg-round bg-circles-positon relative -z-10 w-full pt-4 lg:pt-0"
+          >
+            <div
+              class="container-layout text-neutral-White mt-[188px] lg:mt-0 text-center lg:text-left flex flex-col relative gap-[16px] lg:grid lg:grid-cols-12 lg:gap-[30px]"
+            >
+              <div
+                class="absolute lg:col-start-1 lg:block bottom-[50%] lg:-bottom-[105px] left-2/4 lg:-left-[44px] phone-left-upper z-10"
+              >
+                <img
+                  class="max-w-[332px] sm:max-w-full lg:max-w-none"
+                  src="./images/illustration-phones.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="lg:col-start-7 lg:col-end-13 flex flex-col gap-[21px] lg:pt-[117px]"
+              >
+                <h2
+                  class="font-sansoverpass text-4xl lg:text-4xxl tracking-tighter lg:tracking-tigh font-semibold leading-[43px]"
+                >
+                  State of the Art Infrastructure
+                </h2>
+                <p
+                  class="font-sansubuntu text-base font-light tracking-tighter leading-6 lg:tracking-wide lg:leading-[28px]"
+                >
+                  With reliability and speed in mind, worldwide data centers
+                  provide the backbone for ultra-fast connectivity. This ensures
+                  your site will load instantly, no matter where your readers
+                  are, keeping your site competitive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-[964px]">
+      <div
+        class="container-layout flex lg:grid lg:grid-cols-12 lg:gap-[30px] flex-col items-center pt-[51px] lg:pt-[112px] gap-[20px]"
+      >
+        <img
+          class="w-[435px] lg:w-[974px] max-w-none labtop-desktop"
+          src="./images/illustration-laptop-mobile.svg"
+          srcset="
+            ./images/illustration-laptop-desktop.svg 1400w,
+            ./images/illustration-laptop-mobile.svg  1024w
+          "
+          alt="laptop"
+        />
+        <div
+          class="w-full flex flex-col gap-[26px] lg:gap-[65px] lg:col-start-7 lg:col-span-6"
+        >
+          <div
+            class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3 lg:gap-[26px] px-1"
+          >
+            <h2
+              class="font-sansoverpass font-semibold text-2xl text-neutral-Verydarkgrayishblue w-[193px]"
+            >
+              Free,open,simple
+            </h2>
+            <p
+              class="font-sansubuntu text-base font-light text-neutral-Verydarkgrayishblue tracking-tightest leading-6 lg:tracking-wide lg:leading-[28px]"
+            >
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start lg:text-left text-center gap-3 lg:gap-[26px] px-1"
+          >
+            <h2
+              class="font-sansoverpass font-semibold text-2xl text-primary-Verydarkblue w-[193px]"
+            >
+              Powerful tooling
+            </h2>
+            <p
+              class="font-sansubuntu text-base font-light text-neutral-Verydarkgrayishblue tracking-tightest leading-6 lg:tracking-wide lg:leading-[28px]"
+            >
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="h-[786px] lg:h-[359px]">
+      <div
+        class="h-full w-full bg-neutral-Verydarkblackblue footer-border pt-[66px] lg:pt-0 flex flex-col justify-center"
+      >
+        <div
+          class="container-layout flex flex-col lg:grid lg:grid-cols-12 items-center lg:items-start gap-[42px]"
+        >
+          <div class="lg:col-span-2">
+            <img src="./images/logo.svg" alt="logosvg " />
+          </div>
+          <div
+            class="mt-10 lg:mt-0 lg:col-start-4 flex flex-col lg:flex-row gap-[32px] lg:gap-[180px]"
+          >
+            <div class="flex flex-col gap-[14px] lg:gap-[20px] text-center">
+              <h3
+                class="font-sansubuntu text-neutral-White text-base font-medium tracking-tightest"
+              >
+                Product
+              </h3>
+              <ul
+                role="list"
+                class="flex flex-col gap-[5px] lg:gap-[10px] text-neutral-Grayishblue"
+              >
+                <li>
+                  <a class="text-base leading-6 font-normal" href=""
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href="">Pricing</a>
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href=""
+                    >Markplace</a
+                  >
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href=""
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href=""
+                    >Integrations</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-[14px] lg:gap-[20px] text-center">
+              <h3
+                class="font-sansubuntu text-neutral-White text-base font-medium tracking-tightest"
+              >
+                Company
+              </h3>
+              <ul
+                role="list"
+                class="flex flex-col gap-[5px] lg:gap-[10px] text-neutral-Grayishblue"
+              >
+                <li>
+                  <a class="text-base leading-6 font-normal" href="">About</a>
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href="">Team</a>
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href="">Blog</a>
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href="">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-[14px] lg:gap-[20px] text-center">
+              <h3
+                class="font-sansubuntu text-neutral-White text-base font-medium tracking-tightest"
+              >
+                Connect
+              </h3>
+              <ul
+                role="list"
+                class="flex flex-col gap-[5px] lg:gap-[10px] text-neutral-Grayishblue"
+              >
+                <li>
+                  <a class="text-base leading-6 font-normal" href="">Contact</a>
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href=""
+                    >Newsletter</a
+                  >
+                </li>
+                <li>
+                  <a class="text-base leading-6 font-normal" href=""
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
